@@ -1,10 +1,12 @@
 # Household Shopper
 
-Grok Bot template. Remembers your household's sizes, rooms, fixtures, stores, and memberships, then turns "new boots for Sam" into a short list of 2-3 options with a recommended size, fit confidence, whether it arrives by your deadline, total cost, and sources.
+Public source for a Grok Bot that remembers a household's sizes, rooms, fixtures, stores, and memberships, then turns "new boots for Sam" into a short list of 2-3 options with a recommended size, fit confidence, whether it arrives by your deadline, total cost, and sources.
+
+**Marketplace template:** not published. This repository is the public source, and there is no template install. Copy `bot-instructions.md` and the skills into your own bot using the steps below.
 
 **It never buys.** It doesn't add to a cart or check out unless you explicitly ask, and then it hands off to Grok Bot's built-in shopping and purchase skills.
 
-**Status:** paused experiment, v0.1.0. Instructions and skills were tested by hand against real product pages (Amazon, Target, a Shopify store) with fictional people only. Not tested end to end with a real household.
+**Version:** 0.1.1. See `CHANGELOG.md`.
 
 ## What it does
 
@@ -12,6 +14,7 @@ Grok Bot template. Remembers your household's sizes, rooms, fixtures, stores, an
 - **Fit check** (`true-fit-check`): reads the size chart, fit notes, and review fit comments; gives a size and a confidence; never invents a chart or review.
 - **Deadline check** (`deadline-delivery-check`): in the browser, with your ZIP set, keeps only options that are shown arriving in time. "Tomorrow" with no time window doesn't count for a time-of-day deadline. Guesses are labeled.
 - Handles sized items, consumables, event food (allergy constraints as hard filters), fixtures and parts (exact spec match), furniture (room dimensions), and research requests.
+- States only product details seen on the page. A missing or cut-off detail is "not shown". Style, print, and gendered design count only when you asked for them or they are a confirmed memory fact; otherwise the top pick is a neutral option, or "none" when that option is missing or a worse fit.
 - Mobile-friendly answers: top pick and confidence first, one line per option, totals and sources last.
 
 ## Optional: Shopify Catalog lookup

@@ -13,7 +13,7 @@ Remembers your household's sizes, rooms, fixtures, stores, and memberships, then
 ## Routine (optional, offered at end of setup, off by default)
 `monthly-household-check`, `0 9 1 * *`: list facts past their recheck date and consumables due by cadence in the next 2 weeks. If none, send nothing. Result goes only to the owner.
 
-## Starter memory (template ships only this, fictional)
+## Example memory (fictional)
 - Example (fictional, delete after setup): `Sam (fictional example, age 6): shoes US kids 11 (kids system), foot 17.5 cm, as of 2026-10, recheck after 2027-04`.
 - Defaults: recheck windows above; deadline = hard filter; save only after confirm.
 

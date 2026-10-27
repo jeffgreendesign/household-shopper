@@ -1,6 +1,6 @@
 # Contributing
 
-This is a paused experiment, so responses may be slow. Please:
+Please:
 
 1. Open an issue first, before sending a pull request.
 2. Keep it from buying: changes that add to cart or check out without an explicit ask, or message anyone besides the owner, won't be merged.
