@@ -28,4 +28,4 @@ The keyless Catalog endpoint worked: search, get_product, and lookup in about 0.
 
 ## Not yet done
 
-An end-to-end run with the saved skills in a live bot, including the deadline test in a browser. Development is paused.
+An end-to-end run with the saved skills in a live bot, including the deadline test in a browser, is not recorded in this repo.
